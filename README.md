@@ -1,3 +1,7 @@
+```
+## Remember to change file path  
+```
+```
 ## Inside app.js
 ```
 require('angular');
@@ -20,5 +24,6 @@ app.directive('videoControl', [videoControlDirective]);
 <video controls preload = "none" video-control="itemToShow.videoControl" ng-click="playVideo(itemToShow, false)" poster="{[{itemToShow.image}]}">
 
 ```
-## Remember to change file path  
+## Todo
 ```
+Add infinite loop function
