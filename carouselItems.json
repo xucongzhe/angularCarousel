@@ -1,0 +1,165 @@
+[
+    {
+      "id" : 0,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Half-Moon-Bay/half_moon_bay_gallery_aerial_bay.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "halfmoonbay-gallery"
+    },
+    {
+      "id" : 1,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Half-Moon-Bay/half_moon_bay_gallery_agave.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "antigua-gallery"
+    },
+    {
+      "id" : 2,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Half-Moon-Bay/half_moon_bay_gallery_antigua_eye_aerial.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "activity-gallery"
+    },
+    {
+      "id" : 3,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Half-Moon-Bay/half_moon_bay_gallery_cliffs_spray.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "activity-gallery"
+    },
+    {
+      "id" : 4,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Half-Moon-Bay/half_moon_bay_gallery_gardens.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "activity-gallery"
+    },
+    {
+      "id" : 5,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Half-Moon-Bay/half_moon_bay_gallery_heron.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "halfmoonbay-gallery"
+    },
+    {
+      "id" : 6,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_church.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "antigua-gallery"
+    }, 
+    {
+      "id" : 7,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_coconut_grove.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "antigua-gallery"
+    },
+    {
+      "id" : 8,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_english_harbour.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "antigua-gallery" 
+    },
+    {
+      "id" : 9,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_jacqui_o_2.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "antigua-gallery"
+    },
+    {
+      "id" : 10,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_jacqui_o.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "antigua-gallery"
+    },
+    {
+      "id" : 11,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_nelsons_dockyard_2.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "antigua-gallery"
+    },
+    {
+      "id" : 12,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_nelsons_dockyard.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "antigua-gallery"
+    },
+    { 
+      "id" : 13,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_sailing_2.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "activity-gallery"
+    },
+    {
+      "id" : 14,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_sailing.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "activity-gallery"
+    },
+    {
+      "id" : 15,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Activities/half_moon_bay_gallery_floating.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "halfmoonbay-gallery"
+    },
+    {
+      "id" : 16,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Activities/half_moon_bay_gallery_park.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "activity-gallery"
+    },
+    {
+      "id" : 17,  
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Activities/half_moon_bay_gallery_running_2.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "halfmoonbay-gallery"
+    },
+    {
+      "id" : 18,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Activities/half_moon_bay_gallery_running.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "activity-gallery"  
+    },
+    { 
+      "id" : 19,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Activities/half_moon_bay_gallery_splashing.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "halfmoonbay-gallery"
+    },
+    { 
+      "id" : 20,
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Activities/half_moon_bay_gallery_sup.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "activity-gallery"
+    },
+    {
+      "id" : 21, 
+      "title" : "Appetere frui suroundings terrae",
+      "image" : "../themes/fullsite/assets/images/gallery/Activities/half_moon_bay_gallery_waves.jpg",
+      "mediaType" : "pho",
+      "mediaCategory" : "halfmoonbay-gallery"
+    },
+    {
+      "id" : 22,
+      "title" : "Fake Video",
+      "video" : "http://p.replay-halfmoonbay.xgiergqc49u1c.netdna-cdn.com/vod/replay-halfmoonbay.xgiergqc49u1c/china_replay_3",
+      "image" : "../themes/fullsite/assets/images/gallery/Antigua/half_moon_bay_gallery_jacqui_o.jpg",
+      "mediaType" : "vid",
+      "mediaCategory" : "all",
+      "videoControl" : { "isPlaying": false }
+    }
+  ]

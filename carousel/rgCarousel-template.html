@@ -1,0 +1,36 @@
+<div class="rg-carousel-wrap"> 
+  <a ng-if="arrows != 'false'" class="left rg-carousel-control" data-slide="prev" href="" role="button" ng-show="carouselIndex > 0" ng-click="applySlideChangeImpact('previous')">
+          <img aria-hidden="true" src="{{'themes/fullsite/assets/build/images/Arrows/left-arrow.png'}}">
+          <span class="rg-sr-only">Previous</span>  
+  </a>
+  <a ng-if="arrows != 'false'" class="right rg-carousel-control" ng-show="carouselIndex < (items.length-1)" data-slide="next" href="" role="button" ng-click="applySlideChangeImpact('next')">
+          <img aria-hidden="true" src="{{'themes/fullsite/assets/build/images/Arrows/right-arrow.png'}}">
+          <span class="rg-sr-only">Next</span>
+  </a>
+  <div ng-if="bullets != 'false'" class="rg-carousel-bullets">
+    <ul>
+      <li ng-repeat="itemToShow in items"><a href="javascript:void(0);" ng-click="carouselScrollTo($index)"><div ng-class="{ active: $index == carouselIndex }"></div></a></li>
+    </ul>
+  </div>
+  <div class="rg-carousel" style="width: {{ 100*items.length }}%; margin-left:{{ -100*carouselIndex }}%;">
+      <div style="width: {{ 100/items.length }}%" ng-repeat="itemToShow in items" ng-class="{ active: $index == carouselIndex }"> 
+        <div ng-if="itemToShow.mediaType == 'pho' || itemToShow.mediaType == 'ren'">
+          <img alt="{[{itemToShow.title}]}" ng-src="{[{itemToShow.image}]}">
+          <div class="rg-carousel-caption" ng-show="itemToShow.title !== ''">
+          <p class="rg-caption-desc">
+            {[{itemToShow.title}]}
+          </p>
+          </div>
+        </div>
+        <div ng-if="itemToShow.mediaType == 'vid'" class="rg-video-media-container">
+          <div class="rg-play-mask" ng-show="itemToShow.videoControl.isPlaying == false" ng-click="playVideo(itemToShow, true)">
+          </div>
+          <video controls preload = "none" video-control="itemToShow.videoControl" ng-click="playVideo(itemToShow, false)" poster="{[{itemToShow.image}]}">
+          <source ng-src="{[{itemToShow.video + '.mp4'}]}" type="video/mp4" />
+          <source ng-src="{[{itemToShow.video + '.webm'}]}" type="video/webm" />
+          <source ng-src="{[{itemToShow.video + '.ogv'}]}" type="video/ogg" />
+        </video> 
+        </div> 
+      </div>
+  </div>
+</div> 
