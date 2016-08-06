@@ -1,7 +1,4 @@
-```
 ## Remember to change file path  
-```
-```
 ## Inside app.js
 ```
 require('angular');
