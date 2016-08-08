@@ -2,7 +2,6 @@ module.exports = function($interval) {
   return {
     restrict : 'E',
     templateUrl : 'themes/fullsite/assets/js/directives/carousel/rgCarousel-template.html',
-   // controller : 'themes/fullsite/assets/js/directives/carousel/rgCarouselController.js',
     link : function(scope, element, attrs) {
       var carouselItems = require('../../json/carouselItems.json');
       var category = attrs.category;
@@ -12,7 +11,6 @@ module.exports = function($interval) {
       scope.carouselIndex = 0;
       scope.autoscroll = initAttribute('autoscroll',attrs.autoscroll);
       scope.arrows = initAttribute('arrows',attrs.arrows);
-      console.log(scope.arrows);
       scope.bullets = initAttribute('bullets',attrs.bullets);
 
       if(category == 'all'){
@@ -40,8 +38,6 @@ module.exports = function($interval) {
               scrollInterval = scope.autoscroll;
             }
 
-            console.log(scrollInterval);
-
             scope.autoScrollInterval = $interval(function(){
               if(scope.carouselIndex < itemsLength-1){
                 scope.carouselIndex++;
@@ -54,7 +50,6 @@ module.exports = function($interval) {
       }
 
       function stopAutoScroll(){
-        console.log('stop here');
         if(scope.isAutoScroll){
           $interval.cancel(scope.autoScrollInterval);
         }
@@ -88,10 +83,8 @@ module.exports = function($interval) {
       }
 
       function playVideo(media, shouldPlay) {
-        console.log('start video');
         media.videoControl.isPlaying = shouldPlay; 
         if(shouldPlay == true){
-          console.log('stop videos');
           stopAutoScroll();       
         }else{
           startAutoScroll();
