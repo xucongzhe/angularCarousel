@@ -1,8 +1,8 @@
-.rg-carousel-wrap{
+.sd-carousel-wrap{
 	position: relative;
     z-index: 9999;
     overflow: hidden;
-    .rg-carousel-control{
+    .sd-carousel-control{
       height: 100%;
       display: flex;
       align-items: center;
@@ -19,7 +19,7 @@
     		text-align: left;
    			right: 25px;
     	}
-    	.rg-sr-only{
+    	.sd-sr-only{
     		position: absolute;
 		    width: 1px;
 		    height: 1px;
@@ -30,7 +30,7 @@
 		    border: 0;
     	}
     }
-    .rg-carousel{
+    .sd-carousel{
     	transition: all 1s ease-in-out 0s;
   		overflow: hidden;
    		line-height: 0;
@@ -38,7 +38,7 @@
    			float:left;
    			>div{
    				position:relative;
-   				.rg-carousel-caption{
+   				.sd-carousel-caption{
    					position: fixed;
    					display: none;
     				left: 0;
@@ -54,8 +54,8 @@
    				width:100%;
    			}
    		}
-   		.rg-video-media-container{
-   			.rg-play-mask{
+   		.sd-video-media-container{
+   			.sd-play-mask{
    				position: absolute;
     			top: 0;
    				bottom: 0;
@@ -76,7 +76,7 @@
    			}
    		} 
     }
-    .rg-carousel-bullets{
+    .sd-carousel-bullets{
         position: absolute;
         bottom: 10px;
         left: 5px;

@@ -1,11 +1,12 @@
 module.exports = function($interval) {
   return {
     restrict : 'E',
-    templateUrl : 'themes/fullsite/assets/js/directives/carousel/rgCarousel-template.html',
+    templateUrl : 'themes/fullsite/assets/js/directives/carousel/sdCarousel-template.html',
     link : function(scope, element, attrs) {
       var carouselItems = require('../../json/carouselItems.json');
       var category = attrs.category;
       var videos = [];
+      console.log('directive here');
 
       scope.isAutoScroll = false;
       scope.carouselIndex = 0;
