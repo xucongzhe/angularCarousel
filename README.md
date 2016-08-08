@@ -4,16 +4,16 @@
 require('angular');
 require('angular-animate');
 
-var carouselDirective = require('./directives/carousel/rgCarouselDirective');
+var carouselDirective = require('./directives/carousel/sdCarouselDirective');
 var videoControlDirective = require('./directives/videoControl');
 
-app.directive('rgCarousel', ['$interval', carouselDirective]);
+app.directive('sdCarousel', ['$interval', carouselDirective]);
 app.directive('videoControl', [videoControlDirective]);
 
 ```
-## Example rg-carousel Tag  
+## Example sd-carousel Tag  
 ```
-<rg-carousel category="all" autoscroll="6000" bullets arrows></rg-carousel>
+<sd-carousel category="all" autoscroll="6000" bullets arrows></sd-carousel>
 
 ```
 ## Example video Tag
