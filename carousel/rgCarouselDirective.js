@@ -23,14 +23,11 @@ module.exports = function($interval) {
       init();
 
       function init(){
-        if(scope.autoscroll != 'false'){
-          startAutoScroll();
-        }
-
+        startAutoScroll();
       }
  
       function startAutoScroll(){  
-        if(scope.isAutoScroll == false){
+        if(scope.isAutoScroll == false && scope.autoscroll != 'false'){
             var itemsLength = scope.items.length;
             var scrollInterval = 5000;
 
@@ -45,8 +42,8 @@ module.exports = function($interval) {
                 scope.carouselIndex = 0;
               }
           },scrollInterval);
+          scope.isAutoScroll = true;
         }
-        scope.isAutoScroll = true;
       }
 
       function stopAutoScroll(){
@@ -57,6 +54,8 @@ module.exports = function($interval) {
       }
 
       function carouselScrollTo(index){
+        stopVideos();
+        startAutoScroll();
         scope.carouselIndex = index;
       }
 
