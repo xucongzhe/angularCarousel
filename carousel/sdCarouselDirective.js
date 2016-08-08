@@ -6,7 +6,6 @@ module.exports = function($interval) {
       var carouselItems = require('../../json/carouselItems.json');
       var category = attrs.category;
       var videos = [];
-      console.log('directive here');
 
       scope.isAutoScroll = false;
       scope.carouselIndex = 0;
