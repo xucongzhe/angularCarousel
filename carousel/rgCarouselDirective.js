@@ -8,6 +8,7 @@ module.exports = function($interval) {
       var category = attrs.category;
       var videos = [];
 
+      scope.isAutoScroll = false;
       scope.carouselIndex = 0;
       scope.autoscroll = initAttribute('autoscroll',attrs.autoscroll);
       scope.arrows = initAttribute('arrows',attrs.arrows);
@@ -31,30 +32,33 @@ module.exports = function($interval) {
       }
  
       function startAutoScroll(){  
-        console.log('start animation');
-        var itemsLength = scope.items.length;
-        var scrollInterval = 5000;
+        if(scope.isAutoScroll == false){
+            var itemsLength = scope.items.length;
+            var scrollInterval = 5000;
 
-        if(!isNaN(parseFloat(scope.autoscroll)) && parseFloat(scope.autoscroll) > 2000){
-          scrollInterval = scope.autoscroll;
+            if(!isNaN(parseFloat(scope.autoscroll)) && parseFloat(scope.autoscroll) > 2000){
+              scrollInterval = scope.autoscroll;
+            }
+
+            console.log(scrollInterval);
+
+            scope.autoScrollInterval = $interval(function(){
+              if(scope.carouselIndex < itemsLength-1){
+                scope.carouselIndex++;
+              }else{
+                scope.carouselIndex = 0;
+              }
+          },scrollInterval);
         }
-
-        console.log(scrollInterval);
-
-        scope.isAutoScroll = $interval(function(){
-          if(scope.carouselIndex < itemsLength-1){
-            scope.carouselIndex++;
-          }else{
-            scope.carouselIndex = 0;
-          }
-        },scrollInterval);
+        scope.isAutoScroll = true;
       }
 
       function stopAutoScroll(){
-        console.log('cancel animation');
+        console.log('stop here');
         if(scope.isAutoScroll){
-          $interval.cancel(scope.isAutoScroll);
+          $interval.cancel(scope.autoScrollInterval);
         }
+        scope.isAutoScroll = false;
       }
 
       function carouselScrollTo(index){
@@ -87,11 +91,11 @@ module.exports = function($interval) {
         console.log('start video');
         media.videoControl.isPlaying = shouldPlay; 
         if(shouldPlay == true){
+          console.log('stop videos');
           stopAutoScroll();       
         }else{
           startAutoScroll();
         }
-
       }
 
       function stopVideos() {
